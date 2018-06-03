@@ -2393,6 +2393,45 @@ body{
   color:#fff;
 }
 
+.circular-progress{
+  width:9.375em;
+  height:9.375em;
+  border-radius:50%;
+  margin:auto;
+  background:#000;
+  position:relative;
+  font-size:1em;
+}
+
+.circular-progress:before{
+  content:"120";
+  width:4.6875em;
+  height:4.6875em;
+  padding:.25em;
+  background:#f9f9f9 content-box;
+  font-size:2em;
+  line-height:3.1875em;
+}
+
+.circular-progress:after,.circular-progress:before{
+  color:#000;
+  border-radius:50%;
+  position:absolute;
+  top:0;
+  left:0;
+  text-align:center;
+}
+
+.circular-progress:after{
+  content:"USUARIOS";
+  width:9.375em;
+  height:9.375em;
+  -webkit-transform:scale(1.1);
+      -ms-transform:scale(1.1);
+          transform:scale(1.1);
+  line-height:10.375em;
+}
+
 .banner{
   background-color:#8dc73f;
 }
